@@ -1,0 +1,126 @@
+.tillery {
+    font-family: "Rubik";
+    background-color: white;
+    flex-direction: column;
+}
+
+.tilleryBoardContainer {
+    position: relative;
+}
+
+.tilleryBoard,
+.win {
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+
+.tilleryBoard {
+    padding-bottom: 1.4em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 0.5em;
+}
+
+.tilleryBoardContainer.flipped .tilleryBoard {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.tilleryBoardContainer.flipped .win {
+    transform: rotateY(0) rotateZ(0);
+}
+
+.tilleryCard {
+    position: relative;
+    width: 30vw;
+    height: 16vh;
+}
+
+.tilleryCardFront,
+.tilleryCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffa600;
+    /* background: linear-gradient(135deg, #efb636fa 0%,#ffa600 50%,#ffa600 100%); */
+    color: white;
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+    border-radius: 0.8rem;
+    box-shadow: #dbd5de 0.2rem 0.2rem;
+}
+
+.tilleryCardBack {
+    transform: rotateY(180deg) rotateZ(50deg);
+    user-select: none;
+    text-align: center;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.tilleryCard.flipped .tilleryCardFront {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.tilleryCard.flipped .tilleryCardBack {
+    transform: rotateY(0) rotateZ(0);
+}
+
+.tilleryCardTitle {
+    font-size: 2.2em;
+    padding-bottom: 0.3em;
+    color: #5e5e5e;
+    font-family: 'Rubik';
+    font-weight: 600;
+    text-align: center;
+}
+
+.tilleryInstractions {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.tilleryEndContainer div {
+    width: 80vw;
+    height: 12vh;
+    background-color: #ffa600;
+    border-radius: 0.8rem;
+    box-shadow: #dbd5de 0.4rem 0.4rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.tilleryMovesImg, .tilleryPairsImg {
+    width: 6vw;
+}
+
+.tilleryMovesContainer, .tilleryPairsContainer {
+    width: 50vw;
+    height: 6vh;
+    background-color: #16c8d5;
+    border-radius: 1.8rem;
+    box-shadow: #dbd5de 0.1rem 0.1rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+.tilleryPairsContainer {
+    width: 35vw;
+}
+
+.tilleryTrackersContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 91vw;
+}

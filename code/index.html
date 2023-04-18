@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- scripts -->
+    <script src="content.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="tillder/tillder.js" type="text/javascript"></script>
+    <script src="tillhang/tillhang.js" type="text/javascript"></script>
+    <script src="tillone/tillone.js" type="text/javascript"></script>
+    <script src="tillgram/tillgram.js" type="text/javascript"></script>
+    <script src="tillery/tillery.js" type="text/javascript"></script>
+    <script src="tillsms/tillsms.js" type="text/javascript"></script>
+    <script src="tilloto/tilloto.js" type="text/javascript"></script>
+    <script src="tillwatch/tillwatch.js" type="text/javascript"></script>
+    <script src="tillburger/tillburger.js" type="text/javascript"></script>
+    <!-- librarys -->
+    <script src="../assets/librarys/dragDropTouch.js" type="text/javascript"></script>
+    <script src="../assets/librarys/swiped-events.min.js" type="text/javascript"></script>
+    <script src="../assets/librarys/hammer.js" type="text/javascript"></script>
+    <script src="../assets/librarys/hammerTime.js" type="text/javascript"></script>
+    <script src="../assets/librarys/loading-bar.min.js"></script>
+    <script src="../assets/librarys/confetti.js"></script>
+    <script src="../assets/librarys/Sortable.min.js"></script>
+    <link rel="stylesheet" href="../assets/librarys/loading-bar.min.css">
+    <script src="https://www.youtube.com/player_api"></script>
+    <!-- links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tillder/tillder.css">
+    <link rel="stylesheet" href="tillhang/tillhang.css">
+    <link rel="stylesheet" href="tillone/tillone.css">
+    <link rel="stylesheet" href="tillgram/tillgram.css">
+    <link rel="stylesheet" href="tillery/tillery.css">
+    <link rel="stylesheet" href="tillsms/tillsms.css">
+    <link rel="stylesheet" href="tilloto/tilloto.css">
+    <link rel="stylesheet" href="tillwatch/tillwatch.css">
+    <link rel="stylesheet" href="tillburger/tillburger.css">
+    <!-- must come last -->
+    <link rel="stylesheet" href="tools.css"> 
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="../assets/images/homePage/tilllogoBlack.svg">
+    <title>טי"לפון </title>
+</head>
+<body>
+    <div class="bodyContainer">
+        <!-- loader -->
+        <div class="loader">
+            <img src="../assets/images/homePage/loder.gif" alt="Loading..." />
+        </div>
+        <!-- name entry -->
+        <div class="nameEntry darkScreen">
+            <div class="nameContainer">
+                <label for="name">לפני שנתחיל רצינו לדעת איך לקרוא לכם</label>
+                <input android:windowSoftInputMode="stateVisible" type="text" id="name" name="name">
+                <div class="submitName">ok</div>
+            </div>
+        </div>
+        <!-- top bar -->
+        <div class="topBar">
+            <div class="logoAndFullScreen">
+                <img src="../assets/images/topBar/tillLogoWhite.svg" alt="tillLogo">
+            </div>
+            <div>
+                <div id="battery">0%</div>
+                <img id="batteryImg" src="../assets/images/topBar/batteryEmpty.svg" alt="tillLogo">
+            </div>
+        </div>
+        <!-- alert -->
+        <div class="alert darkScreen">
+            <div class="alertContainer">
+                <div class="alertText"></div>
+                <div class="alertButton"></div>
+            </div>
+        </div>
+        <!-- home page button -->
+        <img id="backToHomePage" class="hidden centerX" src="../assets/images/homePage/toHomePage.svg" alt="home">
+        <!-- home page -->
+        <div class="homePage">
+            <div class="appsContainer"></div>
+        </div>
+        <!-- tillder -->
+        <div class="tillder hidden bg">
+            <img class="tillderTitle centerX" src="../assets/images/tillder/full_tillder_logo.jpg" alt="tillder">
+            <div class="tillderContentHeadContainer"></div>
+        </div>
+        <!-- tillhang -->
+        <div class="tillhang hidden bg"></div>
+        <!-- tillone -->
+        <div class="tillone hidden bg flexCenter">
+            <div class="tilloneTopBar"></div>
+            <div class="tilloneContentContainer flexCenter"></div>
+            <div class="tilloneReviewContainer"></div>
+        </div>
+        <!-- tillgram -->
+        <div class="tillgram hidden bg">
+            <div class="tillgramPageContent"></div>
+        </div>
+        <!-- tillery -->
+        <div class="tillery hidden bg flexCenter">
+            <div class="tilleryBoardContainer">
+                <div class="tilleryBoard"></div>
+            </div>
+        </div>
+        <!-- tilloto -->
+        <div class="tilloto hidden bg">
+            <div class="tillotoRandomTermInfo centerX">
+                <img src="../assets/images/tilloto/dice.svg" class="tillotoRandomTermGemerator">
+                <div class="tillotoInfoContainer">לחצו על הקובייה כדי להגריל הסבר</div>
+            </div>
+            <div class="tillotoInstractions centerX">הגרילו הסבר ולחצו על המושג התואם לו</div>
+            <div class="tillotoBingoContainer"></div>
+            <div class="tillotoBingoTitle centerX">!bingo</div>
+            <!-- confetti -->
+            <p></p> 
+        </div>
+        <!-- tillsms -->
+        <div class="tillsms hidden bg">
+            <div class="tillsmsMainPage">
+                <div class="tillsmsMainPageHeader"></div>
+                <div class="tillsmsPageContent tillsmsContainer1 tillsmsContainer"></div>
+            </div>
+            <div class="tillsmsExerPage bg hidden">
+                <div class="tillsmsAnswerKeybord">
+                    <div class="tillsmsSendBarContainer"><div class="tillsmsSendBar"></div><img src="../assets/images/tillsms/SendArrow.svg" class="tillsmsSendArrow disabled"></div>
+                    <div class="tillsmsAnswersContainer"></div>
+                </div>
+            </div>
+            <div class="tillsmsGameContainer hidden">
+                <div class="tillsmsGameHeader">
+                    <div class="tillsmsGameUiContainer">
+                        <img class="tillsmsStartGameInfo" src="../assets/images/tillsms/informationButton.svg"/>
+                        <img class="tillsmsSoundControlPic" src="../assets/images/tillsms/unmuteButton.svg"/>
+                    </div>
+                    <div class="tillsmsGameHeartContainer"><img src="../assets/images/tillsms/heartFull.svg" class="tillsmsGameHeart tillsmsGameHeart1"><img src="../assets/images/tillsms/heartFull.svg" class="tillsmsGameHeart tillsmsGameHeart2"><img src="../assets/images/tillsms/heartFull.svg" class="tillsmsGameHeart tillsmsGameHeart3"></div>
+                </div>
+                <div class="tillsmsStartGame">
+                    <div class="tillsmsStartGameText centerX">עזרו לנו לחייג לסיימון ואולי תזכו באחוזים</div>
+                    <div class="tillsmsStartGameButton centerItem">
+                        <img class="tillsmsStartGamePic centerItem" src="../assets/images/tillsms/startButton.svg"/>
+                    </div>
+                </div>
+                <div class="tillsmsRestartGame hidden">
+                    <div class="tillsmsRestartGameText centerX">טעות במספר! <br> מוכנים לנסות שוב?</div>
+                    <div class="tillsmsRestartGameButton centerItem">
+                        <img class="tillsmsRestartGamePic centerItem" src="../assets/images/tillsms/restartButton1.svg"/>
+                    </div>
+                </div>
+                <div class="tillsmsGameFeedbackLevel centerX">8 / 0</div>
+                <div class="tillsmsSimonButtonsContainer centerX"></div>
+            </div>
+        </div>
+        <!-- tillwatch -->
+        <div class="tillwatch hidden bg">
+            <div class="tillwatchTopBar">
+                <img class="tillwatchSearchButton tillwatchTopButtons" src="../assets/images/tillwatch/search_white.svg"/>
+                <img class="tillwatchBackButton tillwatchTopButtons hidden" src="../assets/images/tillwatch/arrow-right.svg"/>
+            </div>
+            <div class="tillwatchMainPage"></div>
+            <div class="tillwatchVideoPage hidden"></div>
+            <div class="tillwatchSearchPage hidden">
+                <input class="centerX" id="tillwatchSearchBar" placeholder="חפשו שם של סרטון">
+                <div class="tillwatchSearchScrollContainer centerX"></div>
+            </div>
+        </div>
+        <!-- tillburger -->
+        <div class="tillburger hidden bg">
+            <div id="tillburgerOpeningPage" class="menu centerItem">
+                <div id="tillburgerStartHeadline">ברוכים הבאים למסעדת TILLBURGER!</div>
+                <div id="tilburgerStartText" class="centerItem">מסעדת ההמבורגרים הטובה בבה"דים. <br> במסעדה שלנו אנחנו משרתים את הלקוחות ומרכיבים את המנות לפי בקשותיהם. <br> גררו את המרכיבים לפי הסדר על פי דרישות הלקוח!</div>
+                <div id="tillburgerStartButton" class="centerX">בואו נתחיל לבשל</div>
+            </div>
+            <div class="tillburgerExerPage">
+                <div id="tillburgerExerInstruction"></div>
+                <div class="hamburgerContainer centerItem">
+                    <div class="topBun buns"></div>
+                    <div class="tillburgerToppingsContainer" id="tillburgerToppingsContainer"></div>
+                    <div class="bottomBun buns"></div>
+                </div>
+                <img class="tillburgerSubmitButton" src="../assets/images/tillburger/bell.svg">
+            </div>
+            <div id="feedbackPage" class="menu centerItem hidden">
+                <div class="tillburgerFeedback"></div>
+                <div class="hamburgerContainer centerItem">
+                    <div class="topBun buns"></div>
+                    <div class="tillburgerToppingsFeedback"></div>
+                    <div class="bottomBun buns"></div>
+                </div>
+                <div id="tillburgerNextButton"></div>
+            </div>
+        </div>
+        <!-- battery progress -->
+        <div class="batteryProgressContainer darkScreen">
+            <div id="batteryProgress" class="label-center centerX" data-value="0" data-preset="circle"></div>
+        </div>
+    </div>
+</body>
+</html>

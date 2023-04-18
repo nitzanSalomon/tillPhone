@@ -1,0 +1,505 @@
+:root {
+    --tillsmsMainDark: #1c7c9f;
+    --tillsmsMainLight: #89C2D7;
+}
+
+.tillsms {
+    background-color: white;
+    font-family: Heebo;
+    font-weight: 100;
+}
+
+.tillsmsMainPageHeader {
+    background-color: var(--tillsmsMainDark);
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    box-shadow: 0px -3px 10px black;
+}
+
+.tillsmsHeadline {
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 5vh;
+    padding: 1em;
+}
+
+.tillsmsCameraIcon {
+    width: 5vw;
+}
+
+.tillsmsTopNav {
+    width: 95%;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.tillsmsExerTitleMain {
+    font-size: 2em;
+    top: -13vh;
+}
+
+
+.tillsmsExercise  {
+    display: flex;
+    align-items: center;
+}
+
+.tillsmsExerciseCounter {
+    width: 53.5vw;
+    text-align: center;
+    top: -6vh;
+    margin-right: 0.7em;
+}
+
+.tillsmsContainer {
+    position: absolute;
+    width: 100%;
+    top: 20vh;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.tillsmsExerPic {
+    width: 14vw;
+    border-radius: 50%;
+    padding: 0.8em;
+}
+
+.tillsmsExerciseContainer {
+    display: flex;
+    align-items: center;
+    padding: 0.2em 0;
+}
+
+.tillsmsExerText {
+    width: 70vw;
+    color: #383838;
+}
+
+.tillsmsExerTitle {
+    font-size: 1.1em;
+}
+
+.tillsmsExerStatus {
+    font-size: 0.85em;
+}
+
+
+.tillsmsExerCounterContainer {
+    padding-bottom: 0.5em;
+}
+
+.tillsmsExerCounter {
+    color: rgb(8, 180, 210);
+    font-size: 0.9em;
+    font-weight: 200;
+    padding-bottom: 0.2em;
+}
+
+.tillsmsExerAmount {
+    color: white;
+    background-color: rgb(8, 180, 210);
+    font-size: 0.7em;
+    text-align: center;
+    border-radius: 50%;
+    width: 4.5vw;
+    padding: 0.2em;
+}
+
+.tillsmsExerHeader {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.tillsmsExerHeader > div {
+    color: white;
+}
+
+.tillsmsExerHeader > .tillsmsExerText {
+    width: 60vw;
+}
+
+.tillsmsExerHeader > .tillsmsExerPic {
+    padding: 0.8em 0.2em;
+    margin-left: 0.6em;
+}
+
+.tillsmsExerPage {
+    background-image: url("../../assets/images/tillsms/bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.tillsmsExerheaderContainer {
+    background-color: var(--tillsmsMainDark);
+    position: absolute;
+    width: 100%;
+    height: 16vh;
+    box-shadow: 0px -3px 10px black;
+}
+
+.tillsmsExerArrow {
+    width: 8vw;
+    padding-right: 0.2em;
+}
+
+/* var(--tillsmsMainLight) */
+
+.animate__pulse {
+    animation: pulse ease-in-out 1.2s forwards
+}
+
+.tillsmsQuestionContainer {
+    position: absolute;
+    width: 100%;
+    height: 46vh;
+    top: 16vh;
+    overflow: scroll;
+}
+
+.tillsmsQuestionContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.tillsmsQuestion {
+    background-color: var(--tillsmsMainLight);
+    width: fit-content;
+    max-width: 60vw;
+    height: fit-content;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.tillsmsQuestionBubble {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 1em;
+}
+
+.bubbleArrow {
+    width: 6vw;
+    margin-bottom: 1em;
+}
+
+.tillsmsSendArrow {
+    width: 10vw;
+}
+
+.tillsmsSendBar {
+    height: 5vh;
+    width: 73vw;
+    background-color: rgb(255 255 255);
+    border: none;
+    border-radius: 2em;
+    color: #464343;
+    text-align: center;
+    line-height: 2;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 0 1em;
+}
+
+.tillsmsSendBarWithPic {
+    height: 11vh;
+    border-radius: 1em;
+}
+
+.tillsmsSendBar::-webkit-scrollbar {
+    display: none;
+}
+
+.tillsmsSendBarContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.6em;
+    position: absolute;
+    bottom: 29.5vh;
+    width: 96%;
+}
+
+.tillsmsAnswerKeybord {
+    position: absolute;
+    width: 100%;
+    height: 38vh;
+    bottom: 0;
+}
+
+.tillsmsAnswersContainer {
+    background-color: var(--tillsmsMainLight);
+    width: 100%;
+    height: 29.5vh;
+    display: grid;
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+    /* padding-bottom: 2.8rem; */
+    /* align-content: center; */
+}
+
+.tillsmsAns {
+    background-color: rgb(255 255 255);
+    border-radius: 0.5em;
+    padding: 0.2em;
+    margin: 0.4em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.manyPicsAns {
+    width: 100%;
+    height: 100%;
+}
+
+.tillsmsAnswerBubble {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 1em;
+}
+
+.tillsmsAnswer {
+    background-color: rgb(255 255 255);
+    width: fit-content;
+    max-width: 60vw;
+    height: fit-content;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.tillsmsSendBarPic {
+    width: 25vw;
+    margin: 0.2em;
+}
+
+.tillsmsSendHomeButton {
+    width: 6vw;
+    margin-right: 0.7em;
+}
+
+.tillsmsSendHomeMessege {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.tillsmsSendHomeButtonMainPage {
+    position: fixed;
+    bottom: 2vh;
+    background-color: var(--tillsmsMainDark);
+    padding: 0.6em;
+    border-radius: 0.6em;
+    z-index: 3;
+}
+
+/* simon game */
+
+.tillsmsGameContainer {
+    font-family: "Calibri";
+}
+
+.tillsmsGameHeader {
+    background-color: var(--tillsmsMainDark);
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    box-shadow: 0px -3px 10px black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    direction: ltr;
+    padding-bottom: 0.3em;
+}
+
+.tillsmsSimonButtonsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    direction: ltr;
+    bottom: 7vh;
+}
+
+.simonButton {
+    background-color: var(--tillsmsMainDark);
+    color: var(--tillsmsMainLight);
+    border: 0.2em solid var(--tillsmsMainLight);
+    width: 19vw;
+    height: 6vh;
+    margin: 0.3em 0.5em;
+    padding-top: 0.3em;
+    text-align: center;
+    font-size: 1.6em;
+    border-radius: 0.5em;
+    font-weight: bold;
+}
+
+.simonButton0 {
+    grid-area: 4 / 2/ span 1/ span 1;
+}
+
+.simonButton.flash {
+    filter: brightness(0.7);
+}
+
+.simonButton.flashRed {
+    background-color: rgb(191, 55, 55);
+    color: #be6363;
+    border: 0.2em solid #be6363;
+}
+
+.simonButton.flashGreen {
+    background-color: rgb(54, 152, 85);
+    color: #94e39a;
+    border: 0.2em solid #94e39a;
+}
+
+.tillsmsSoundControlPic {
+    width: 10vw;
+    background-color: var(--tillsmsMainLight);
+    border-radius: 50%;
+}
+
+.tillsmsStartGameInfo {
+    width: 10vw;
+    background-color: var(--tillsmsMainLight);
+    border-radius: 50%;
+    margin: 0 0.5em;
+}
+
+.tillsmsRestartGame,.tillsmsStartGame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+    color: white;
+}
+
+.tillsmsRestartGameText,.tillsmsStartGameText {
+    text-align: center;
+    font-size: 1.8em;
+    top: 30vh;
+    width: 70vw;
+    font-weight: 800;
+}
+
+.tillsmsStartGamePic {
+    width: 17vw;
+}
+
+.tillsmsRestartGamePic {
+    width: 10vw;
+}
+
+.tillsmsRestartGameButton,.tillsmsStartGameButton {
+    width: 11vw;
+    height: 6vh;
+    background-color: var(--tillsmsMainDark);
+    color: var(--tillsmsMainLight);
+    border: 0.4em solid var(--tillsmsMainLight);
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.tillsmsGameHeart {
+    width: 9vw;
+    padding: 0.3em;
+}
+
+.tillsmsGameHeartContainer {
+    direction: ltr;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 36vw;
+}
+
+.tillsmsGameFeedbackLevel  {
+    color: var(--tillsmsMainDark);
+    font-size: 2.8em;
+    font-weight: 800;
+    top: 36vh;
+}
+
+.tillsmsEndGame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    height: 88vh;
+    z-index: 4;
+    color: white;
+    background: linear-gradient(-45deg, #e73c7e 10%, var(--tillsmsMainDark) 40%, var(--tillsmsMainLight) 70%);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 6vh 5vw;
+}
+
+.tillsmsGameEndPerson {
+    top: 15vh;
+    width: 34vw;
+    padding: 1.3em 0.8em 0.3em;
+    border: 0.3em solid #ffffff;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+
+.tillsmsGameEndButton  {
+    width: 15vw;
+    bottom: 10vh;
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.4em;
+}
+
+.tillsmsGameEndName {
+    top: 43vh;
+    font-size: 1.6em;
+    font-family: "Heebo";
+    text-align: center;
+}
+
+.tillsmsgameEndNumber {
+    font-size: 1.2em;
+    font-family: 'Heebo';
+    text-align: center;
+}
+
+.tillsmsGameEndText {
+    font-size: 1.2em;
+    font-family: 'Heebo';
+    text-align: center;
+}
+
+.tillsmsGameEndIconContainer {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tillsmsGameEndIcon {
+    padding: 0.2em;
+    width: 13vw;
+    border: 0.14em solid white;
+    border-radius: 50%;
+}
+
+/* progress */
+#tillsmsProgressBar { 
+    width: 60vw;
+}

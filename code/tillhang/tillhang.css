@@ -1,0 +1,121 @@
+.tillhang {
+    color: white;
+    font-family: "matka";
+    background-image: url("../../assets/images/tillhang/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tillhangContainer {
+    padding: 1em;
+    width: 92vw;
+    height: 65vh;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    flex-direction: column;
+    letter-spacing: 0.1em;
+}
+
+.tillhangTitle {
+    font-size: 2.5em;
+}
+
+.tillhangHanger {
+    width: 28vw;
+    margin: 1em;
+}
+ 
+.tillhangTitleDefinition {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.tillhangDefinition {
+    font-size: 1.6em;
+    line-height: 1.4;
+}
+
+.tillhangLetterSpace {
+    width: 90vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 26vh;
+}
+
+.letterSpace {
+    font-size: 1.6em;
+    font-weight: bold;
+    border-bottom: 0.1em solid transparent;
+    border-image: url("../../assets/images/tillhang/underline.svg") 2 stretch;
+    width: 8vw;
+    height: 8vh;
+    line-height: 2.6;
+}
+
+.letterSpaceDash {
+    width: 5vw;
+    height: 2vh;
+}
+
+.tillhangkeyBoard {
+    width: 88vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 65vh;
+}
+
+.keyboardLetter  {
+    font-size: 1.15em;
+    /* font-weight: bold; */
+    width: 7vw;
+    height: 4vh;
+    text-align: center;
+    background-color: #034442;
+    line-height: 1.4;
+    margin: 0.1em;
+    border-radius: 0.4em;
+    padding: 0.2em;
+}
+
+.tillHangNextQuestion {
+    bottom: 30vh;
+    background-color: #034442;
+    width: 20vw;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.tillhangEndButton {
+    bottom: 30vh;
+    background-color: #034442;
+    width: 20vw;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.tillhangEndMan {
+    width: 24vw;
+    padding: 1em;
+}
+
+.boardContainer .boardFlex {
+    display: flex;
+}
+
+.boardContainer {
+    top: 17vh;
+}
+
+.tillhangDefinitionContainer {
+    width: 50vw;
+}

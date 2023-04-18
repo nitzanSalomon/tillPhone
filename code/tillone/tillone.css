@@ -1,0 +1,164 @@
+.tillone {
+    background-color: #f6e466;
+    font-family: "Assistant";
+}
+
+.tilloneTopBar {
+    position: absolute;
+    top: 5vh;
+    width: 100%;
+    height: 5vh;
+    background-color: #f6e466;
+    box-shadow: 0em 0.2em 20px #9d8b02;
+    text-align: left;
+    padding-left: 1.2em;
+    line-height: 1.9;  
+}
+
+.tilloneQuestion {
+    font-weight: 800;
+    font-size: 1.2em;
+    text-align: center;
+    width: 80vw;
+    margin: 2em;
+}
+
+.tilloneQuestionIcon {
+    width: 8vw;
+}
+
+.tilloneQuestionIconContainer {
+    background-color: white;
+    border-radius: 50%;
+    width: 18vw;
+    height: 10vh;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+
+.tilloneContentContainer {
+    flex-direction: column;
+}
+
+.tillone .ansContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+    justify-content: space-between;
+    width: 100vw;
+    text-align: center;
+}
+
+.tilloneAns  {
+    width: 40vw;
+    margin: 1em;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+}
+
+.tilloneAnswerIcon {
+    width: 6vw;
+    padding: 0.5em;
+    padding-top: 1em;
+}
+
+.tilloneReview {
+    text-align: center;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tilloneExplaine {
+    background-color: white;
+    width: 100vw;
+    height: 70vh;
+}
+
+.tilloneReviewContainer {
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tilloneExplainetion {
+    height: fit-content;
+    box-shadow: 0em 0.2em 20px rgb(171, 171, 171);
+    padding: 0.4em;
+}
+
+.tilloneReviewQuestion {
+    font-weight: 800;
+    font-size: 1.1em;
+    text-align: center;
+    width: 80vw;
+    margin: 0.2em;
+}
+
+.tilloneNextArrrow {
+    width: 9vw;
+}
+
+.tilloneFeedbackContainer {
+    flex-direction: column;
+    text-align: center;
+}
+
+.tilloneFeedbackTextContainer {
+    background-color: white;
+    width: 74vw;
+    height: 35vh;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tilloneFeedbackBlue {
+    background-color: #b2c6df;
+    width: fit-content;
+    padding: 0.3em;
+    font-size: 0.9em;
+}
+
+.tilloneFeedbackGray {
+    background-color: #dae6f4;
+    width: 74vw;
+    padding: 1.7em 0;
+}
+
+.tilloneFeedbackTitleIcon {
+    width: 5vw;
+    padding: 0.4em;
+}
+
+.tilloneFeedbackTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4em;
+
+}
+
+.tilloneEndIcon {
+    width: 5vw;
+}
+
+.tilloneEndbuttonContainer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.4em;
+    border-radius: 1em;
+    width: 22vw;
+    margin: 1em;
+
+}

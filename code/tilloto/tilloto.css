@@ -1,0 +1,137 @@
+:root {
+    --tillotoMainDrak: #0b667b;
+    --tillotoMainMedium: #107187;
+    --tillotoMainLight: #95c1d1;
+  }
+  
+  .tilloto {
+    direction: ltr; 
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(var(--tillotoMainLight), var(--tillotoMainMedium));
+    background-image: url("../../assets/images/tilloto/bingoBg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .tillotoRandomTermGemerator {
+    width: 8vw;
+    background-color: var(--tillotoMainDrak);
+    padding: 0.5em;
+    border-radius: 50%;
+  }
+
+  .tillotoInfoContainer {
+    width: 72vw;
+    background-color: var(--tillotoMainDrak);
+    padding: 0.3em;
+    max-height: 14vh;
+    overflow-y: scroll;
+  }
+
+  .tillotoInstractions {
+    color: white;
+    font-family: 'Rubik';
+    font-size: 1.25em;
+    top: 7vh;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .tillotoBingoContainer {
+    background-color: var(--tillotoMainDrak);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 95vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 32vh;
+    padding: 0.2em;
+  }
+  
+  .bingoSqure {
+    background-color: white;
+    text-align: center;
+    padding: 0.2em;
+    padding-top: 0.4em;
+    margin: 0.1em;
+    font-family: rubik;
+    min-height: 17vw;
+  }
+  
+  .tillotoRandomTermInfo {
+    color: white;
+    font-family: 'Rubik';
+    font-size: 1.15em;
+    top: 15vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .restartButton {
+    width: 17.5vw;
+    height: 10vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--tillotoMainDrak);
+    border: 0.4em solid var(--tillotoMainLight);
+    padding: 0.5em;
+    border-radius: 50%;
+  }
+  
+  .restartButtonPic {
+    width: 11vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tillotoBingoTitle {
+    font-family: Bangers;
+    bottom: 7vh;
+    font-size: 5em;
+    color: white;
+  }
+  
+  .tillotoGameHeart {
+    width: 11vw;
+    position: absolute;
+    top: 22vh;
+    left: 45vw;
+    filter: grayscale(1) brightness(1.3);
+  }
+
+  .flashRed {
+    animation: flashRed 2s;
+  }
+
+  .tillotoEnd {
+    font-family: 'Rubik';
+    background-color: var(--tillotoMainLight);
+    border: 0.2rem solid var(--tillotoMainDrak);
+    width: 90vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 32vh;
+    padding: 0.2em;
+    color: var(--tillotoMainDrak);
+  }
+
+  /* confetti */
+  p {
+      font-size: 4rem;
+      text-shadow: 0 0 10px;
+  }
+  
