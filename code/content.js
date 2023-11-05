@@ -2,118 +2,118 @@ const FORCE = 0;
 const DONT_FORCE = 1;
 const DATA = { 
     // tillder
-    "tillder": {
-        "icon": "../assets/images/homePage/tillder.svg",
-        "amountOfQuestions": 2, // how many questions will actualy appear
-        "completed": false,
-        "appContent":  [
-            {
-                "type": "binary",
-                "src": "../assets/images/tillder/dog.jpg",
-                "question": "שאלת נכון או לא נכון שהתשובה אליה היא נכון",
-                "correctAns": true,
-                "selectedAns": "",
-            },
-            {
-                "type": "binary",
-                "src": "../assets/images/tillder/exemple6.jpg",
-                "question": "שאלת נכון או לא נכון שהתשובה אליה היא לא נכון",
-                "correctAns": false,
-                "selectedAns": "",
-            },
-        ],
-    },
+    // "tillder": {
+    //     "icon": "../assets/images/homePage/tillder.svg",
+    //     "amountOfQuestions": 2, // how many questions will actualy appear
+    //     "completed": false,
+    //     "appContent":  [
+    //         {
+    //             "type": "binary",
+    //             "src": "../assets/images/tillder/dog.jpg",
+    //             "question": "שאלת נכון או לא נכון שהתשובה אליה היא נכון",
+    //             "correctAns": true,
+    //             "selectedAns": "",
+    //         },
+    //         {
+    //             "type": "binary",
+    //             "src": "../assets/images/tillder/exemple6.jpg",
+    //             "question": "שאלת נכון או לא נכון שהתשובה אליה היא לא נכון",
+    //             "correctAns": false,
+    //             "selectedAns": "",
+    //         },
+    //     ],
+    // },
     // tillhang
-    "tillhang": {
-        "icon": "../assets/images/homePage/tillhang.svg",
-        "amountOfQuestions": 2, // how many questions will actualy appear
-        "completed": false,
-        "appContent":  [
-            {
-                "src": "../assets/images/homePage/tillder.png",
-                "definition": "הגדרה של מושג כי מושג זה כיף",
-                "answer": [// if you want two words put a dash between them, not more then 8 letters
-                    "מ",
-                    "ו",
-                    "ש",
-                    "ג",
-                    "-",
-                    "א",
-                ],
-            },
-            {
-                "src": "../assets/images/homePage/tillder.png",
-                "definition": "הגדרה של עוד מושג כי מושג זה כיף",
-                "answer": [// if you want two words put a dash between them, not more then 8 letters
-                    "מ",
-                    "ו",
-                    "ש",
-                    "ג",
-                    "-",
-                    "ב",
-                ],
-            },
-        ],
-    },
+    // "tillhang": {
+    //     "icon": "../assets/images/homePage/tillhang.svg",
+    //     "amountOfQuestions": 2, // how many questions will actualy appear
+    //     "completed": false,
+    //     "appContent":  [
+    //         {
+    //             "src": "../assets/images/homePage/tillder.png",
+    //             "definition": "הגדרה של מושג כי מושג זה כיף",
+    //             "answer": [// if you want two words put a dash between them, not more then 8 letters
+    //                 "מ",
+    //                 "ו",
+    //                 "ש",
+    //                 "ג",
+    //                 "-",
+    //                 "א",
+    //             ],
+    //         },
+    //         {
+    //             "src": "../assets/images/homePage/tillder.png",
+    //             "definition": "הגדרה של עוד מושג כי מושג זה כיף",
+    //             "answer": [// if you want two words put a dash between them, not more then 8 letters
+    //                 "מ",
+    //                 "ו",
+    //                 "ש",
+    //                 "ג",
+    //                 "-",
+    //                 "ב",
+    //             ],
+    //         },
+    //     ],
+    // },
     // tillone
-    "tillone": {
-        "icon": "../assets/images/homePage/tillone.svg",
-        "amountOfQuestions": 2, // how many questions will actualy appear
-        "completed": false,
-        "appContent":  [
-            {
-                "question": "שאלה ששואלת מה עדיף לעשות?",
-                "answers": ["לטוס", "לעשות אוריגאמי", "לטייל", "להיות בבית", "לאהוב", "לכתוב"],
-                "icons": [
-                    "../assets/images/tillone/world.svg",
-                    "../assets/images/tillone/paper-plane.svg",
-                    "../assets/images/tillone/marker.svg",
-                    "../assets/images/tillone/home.svg",
-                    "../assets/images/tillone/heart.svg",
-                    "../assets/images/tillone/document.svg",
-                ],
-                "correctAns": "ans5",// location in answers array (start from 0)
-                "explanation": "התשובה הנכונה היא לעשות אורגאמי כמובן לא רואה אפשרות אחרת בכלל",// explain why correct answer is correct
-            },
-            {
-                "question": "שאלה שאלתית שיש לתשובות שלה אייקונים כי למה לא בעצם?",
-                "answers": ["לטוס", "לעשות אוריגאמי", "לטייל", "להיות בבית", "לאהוב", "לכתוב"],
-                "icons": [
-                    "../assets/images/tillone/world.svg",
-                    "../assets/images/tillone/paper-plane.svg",
-                    "../assets/images/tillone/marker.svg",
-                    "../assets/images/tillone/home.svg",
-                    "../assets/images/tillone/heart.svg",
-                    "../assets/images/tillone/document.svg",
-                ],
-                "correctAns": "ans1",// location in answers array (start from 0)
-                "explanation": "התשובה הנכונה היא לעשות אורגאמי כמובן לא רואה אפשרות אחרת בכלל",// explain why correct answer is correct
-            },
-        ],
-    },
+    // "tillone": {
+    //     "icon": "../assets/images/homePage/tillone.svg",
+    //     "amountOfQuestions": 2, // how many questions will actualy appear
+    //     "completed": false,
+    //     "appContent":  [
+    //         {
+    //             "question": "שאלה ששואלת מה עדיף לעשות?",
+    //             "answers": ["לטוס", "לעשות אוריגאמי", "לטייל", "להיות בבית", "לאהוב", "לכתוב"],
+    //             "icons": [
+    //                 "../assets/images/tillone/world.svg",
+    //                 "../assets/images/tillone/paper-plane.svg",
+    //                 "../assets/images/tillone/marker.svg",
+    //                 "../assets/images/tillone/home.svg",
+    //                 "../assets/images/tillone/heart.svg",
+    //                 "../assets/images/tillone/document.svg",
+    //             ],
+    //             "correctAns": "ans5",// location in answers array (start from 0)
+    //             "explanation": "התשובה הנכונה היא לעשות אורגאמי כמובן לא רואה אפשרות אחרת בכלל",// explain why correct answer is correct
+    //         },
+    //         {
+    //             "question": "שאלה שאלתית שיש לתשובות שלה אייקונים כי למה לא בעצם?",
+    //             "answers": ["לטוס", "לעשות אוריגאמי", "לטייל", "להיות בבית", "לאהוב", "לכתוב"],
+    //             "icons": [
+    //                 "../assets/images/tillone/world.svg",
+    //                 "../assets/images/tillone/paper-plane.svg",
+    //                 "../assets/images/tillone/marker.svg",
+    //                 "../assets/images/tillone/home.svg",
+    //                 "../assets/images/tillone/heart.svg",
+    //                 "../assets/images/tillone/document.svg",
+    //             ],
+    //             "correctAns": "ans1",// location in answers array (start from 0)
+    //             "explanation": "התשובה הנכונה היא לעשות אורגאמי כמובן לא רואה אפשרות אחרת בכלל",// explain why correct answer is correct
+    //         },
+    //     ],
+    // },
     // tillgram
-    "tillgram": {
-        "icon": "../assets/images/homePage/tillgram.svg",
-        "completed": false,
-        "appContent":  [
-            {
-                "title": "כותרת לנושא",
-                "icon": "../assets/images/tillgram/dog.jpg",
-                "text": "היי אני טקסט שנלווה לתמונה והוא גם מאוד קשור אליה ועוזר לתאר אותה ואת הקשר לנושא",
-                "src": ["../assets/images/tillgram/exemplePic.jpg", "../assets/images/tillgram/exemple2.jpg", "../assets/images/tillgram/exemple3.jpg"],
-                "currentPic": 0, // dont tuch
-                "notRead": true,
-            },
-            {
-                "title": "כותרת לנושא",
-                "icon": "../assets/images/tillgram/dog.jpg",
-                "text": "היי אני טקסט שנלווה לתמונה והוא גם מאוד קשור אליה ועוזר לתאר אותה ואת הקשר לנושא",
-                "src": ["../assets/images/tillgram/exemplePic.jpg", "../assets/images/tillgram/exemple2.jpg", "../assets/images/tillgram/exemple3.jpg"],
-                "currentPic": 0, // dont tuch
-                "notRead": true,
-            },
-        ],
-    },
+    // "tillgram": {
+    //     "icon": "../assets/images/homePage/tillgram.svg",
+    //     "completed": false,
+    //     "appContent":  [
+    //         {
+    //             "title": "כותרת לנושא",
+    //             "icon": "../assets/images/tillgram/dog.jpg",
+    //             "text": "היי אני טקסט שנלווה לתמונה והוא גם מאוד קשור אליה ועוזר לתאר אותה ואת הקשר לנושא",
+    //             "src": ["../assets/images/tillgram/exemplePic.jpg", "../assets/images/tillgram/exemple2.jpg", "../assets/images/tillgram/exemple3.jpg"],
+    //             "currentPic": 0, // dont tuch
+    //             "notRead": true,
+    //         },
+    //         {
+    //             "title": "כותרת לנושא",
+    //             "icon": "../assets/images/tillgram/dog.jpg",
+    //             "text": "היי אני טקסט שנלווה לתמונה והוא גם מאוד קשור אליה ועוזר לתאר אותה ואת הקשר לנושא",
+    //             "src": ["../assets/images/tillgram/exemplePic.jpg", "../assets/images/tillgram/exemple2.jpg", "../assets/images/tillgram/exemple3.jpg"],
+    //             "currentPic": 0, // dont tuch
+    //             "notRead": true,
+    //         },
+    //     ],
+    // },
     // tillery
     "tillery": {
         "icon": "../assets/images/homePage/tillery.svg",
@@ -177,24 +177,24 @@ const DATA = {
         "amountOfQuestions": 2, // how many questions will actualy appear
         "completed": false,
         "appContent":  [
-            ["1מושג", "1הסבר על מושג"],
-            ["2מושג", "2הסבר על מושג"],
-            ["3מושג", "3הסבר על מושג"],
-            ["4מושג", "4הסבר על מושג"],
-            ["5מושג", "5הסבר על מושג"],
-            ["6מושג", "6הסבר על מושג"],
-            ["7מושג", "7הסבר על מושג"],
-            ["8מושג", "8הסבר על מושג"],
-            ["9מושג", "9הסבר על מושג"],
-            ["10מושג", "10הסבר על מושג"],
-            ["11מושג", "11הסבר על מושג"],
-            ["12מושג", "12הסבר על מושג"],
-            ["13מושג", "13הסבר על מושג"],
-            ["14מושג", "14הסבר על מושג"],
-            ["15מושג", "15הסבר על מושג"],
-            ["16מושג", "16הסבר על מושג"],
-            ["17מושג", "17הסבר על מושג"],
-            ["18מושג", "18הסבר על מושג"],
+            ["כלב", "חיה שנובחת"],
+            ["פנדה", "דוב בצבעי שחור לבן"],
+            ["אריה", "מלך החיות"],
+            ["סוס", "חיה שדוהרת"],
+            ["זאב", "חייה שמייללת"],
+            ["דולפין", "יונק ימי"],
+            ["דבורה", "חיה שמייצרת דבש"],
+            ["נמלה", "חיה שידועה בחריצותה"],
+            ["פיל", "היונק הגדול ביותר"],
+            ["ארנב", "חיה שמקפצת"],
+            ["פרפר", "חיה שיוצאת מזחל"],
+            ["חתול", "חית מחמד שמיללת"],
+            ["נחש", "חיה שזוחלת"],
+            ["זברה", "חיה עם פסים"],
+            ["ג'ירפה", "חיה עם צאוור גבוה"],
+            ["קוף", "חיה שנתלת על עצים"],
+            ["עכביש", "חיה עם 8 רגלים"],
+            ["קרנף", "חיה עם קרן"],
         ],
     },
     // tillsms
@@ -211,23 +211,23 @@ const DATA = {
                 content: [
                 {
                     type: `manyPics`,
-                    question: `שאלה עם המון תמונות שאפשר לבחור מהן כמה שרוצים`,
+                    question: `בחרו בשתי החיות שמייללות`,
                     // recomended: no more than 16 answers, 8 if the are longer than one word
-                    answers: ["../assets/images/tillsms/exemple8.jpg","../assets/images/tillsms/exemple8.jpg","../assets/images/tillsms/exemple8.jpg", "../assets/images/tillsms/exemple8.jpg", "../assets/images/tillsms/exemple8.jpg", "../assets/images/tillsms/exemple8.jpg"],// the legth will determine how many answers will apear
-                    correctAns: [`ans1`, `ans3`] // the legth will determine how many answers are reqwiered
+                    answers: ["../assets/images/tillsms/exemple4.jpg","../assets/images/tillsms/exemple5.jpg","../assets/images/tillsms/exemple6.jpg", "../assets/images/tillsms/exemple7.jpg", "../assets/images/tillsms/exemple8.jpg", "../assets/images/tillsms/exemple1.jpg"],// the legth will determine how many answers will apear
+                    correctAns: [`ans2`, `ans6`] // the legth will determine how many answers are reqwiered
                 },
                 {
                     type: `manyChoices`,
-                    question: `שאלה עם המון אפשרויות שאפשר לבחור מהן כמה שרוצים`,
+                    question: `בחרו בתשובות שמתחלקות ב5`,
                     // recomended: no more than 16 answers, 8 if the are longer than one word
                     answers: [ "תשובה 1", "תשובה 2", "תשובה 3", "תשובה 4", "תשובה 5", "תשובה 6", "תשובה 7", "תשובה 8", "תשובה 9", "תשובה 10", "תשובה 11", "תשובה 12", "תשובה 13", "תשובה 14", "תשובה 15", "תשובה 16",],// the legth will determine how many answers will apear
-                    correctAns: [`ans1`, `ans2`, `ans5`] // the legth will determine how many answers are reqwiered
+                    correctAns: [`ans5`, `ans10`, `ans15`,] // the legth will determine how many answers are reqwiered
                 },
                 {
                     type: `manyChoices`,
-                    question: `שאלה עם המון אפשרויות שאפשר לבחור מהן כמה שרוצים`,
+                    question: `איזה מהחיות חיה בים?`,
                     // recomended: no more than 16 answers, 8 if the are longer than one word
-                    answers: [ "תשובה 1", "תשובה 2", "תשובה 3", "תשובה 4", "תשובה 3", "תשובה 4",],// the legth will determine how many answers will apear
+                    answers: [ "דולפין", "פנדה", "כלב", "אריה", "זאב", "סוס",],// the legth will determine how many answers will apear
                     correctAns: [`ans1`] // the legth will determine how many answers are reqwiered
                 },
             ],},
@@ -239,10 +239,10 @@ const DATA = {
                 content: [
                 {
                     type: `manyChoices`,
-                    question: `שאלה עם המון אפשרויות שאפשר לבחור מהן כמה שרוצים`,
+                    question: `בחרו בתשובות  הגדולות מ10`,
                     // recomended: no more than 16 answers, 8 if the are longer than one word
                     answers: [ "תשובה 1", "תשובה 2", "תשובה 3", "תשובה 4", "תשובה 5", "תשובה 6", "תשובה 7", "תשובה 8", "תשובה 9", "תשובה 10", "תשובה 11", "תשובה 12",],// the legth will determine how many answers will apear
-                    correctAns: [`ans1`, `ans6`] // the legth will determine how many answers are reqwiered
+                    correctAns: [`ans11`, `ans12`] // the legth will determine how many answers are reqwiered
                 },
             ],},
             {
@@ -253,10 +253,10 @@ const DATA = {
                 content: [
                 {
                     type: `manyChoices`,
-                    question: `שאלה עם המון אפשרויות שאפשר לבחור מהן כמה שרוצים`,
+                    question: `בחרו בתשובות המתחלקות ב3`,
                     // recomended: no more than 16 answers, 8 if the are longer than one word
                     answers: [ "תשובה 1", "תשובה 2", "תשובה 3", "תשובה 4", "תשובה 5", "תשובה 6", "תשובה 7", "תשובה 8", "תשובה 9",],// the legth will determine how many answers will apear
-                    correctAns: [`ans2`, `ans5`] // the legth will determine how many answers are reqwiered
+                    correctAns: [`ans3`, `ans6`, `ans9`] // the legth will determine how many answers are reqwiered
                 },
             ],},
         ]
@@ -268,63 +268,63 @@ const DATA = {
         "amountOfQuestions": 2, // how many questions will actualy appear
         "completed": false,
         "appContent": {
-            "playlistName": [
+            "שירים": [
                 {
-                    "videoTitle": "שם הסרטון",
-                    "src": "n0t9iFlGO20",
-                    "info": "מידע על הסרטוןןןןן מלא תוכןן יאייי",
+                    "videoTitle": "shivers",
+                    "src": "Il0S8BoucSA",
+                    "info": "מידע על הסרטון",
                     "forceToWatch": FORCE,// force user to watch 
                 },
                 {
-                    "videoTitle": "תפוח",
-                    "src": "n0t9iFlGO20",
-                    "info": "מידע על הסרטוןןןןן מלא תוכןן יאייי",
+                    "videoTitle": "as it was",
+                    "src": "H5v3kku4y6Q",
+                    "info": "מידע על הסרטון",
                     "forceToWatch": DONT_FORCE, // dont force user to watch
                 },
                 {
-                    "videoTitle": "גלידה",
-                    "src": "w141thRQ-ks",
-                    "info": "מידע על הסרטוןןןןן מלא תוכןן יאייי",
-                    "forceToWatch": DONT_FORCE, // dont force user to watch
-                },
-            ],
-            "playlistName1": [
-                {
-                    "videoTitle": "כלבלבים",
-                    "src": "ysb_gxJ8LE4",
-                    "info": "מידע על הסרטוןןןןן מלא תוכןן יאייי",
-                    "forceToWatch": DONT_FORCE, // dont force user to watch
-                },
-                {
-                    "videoTitle": "חלומות",
-                    "src": "n0t9iFlGO20",
-                    "info": "מידע על הסרטוןןןןן מלא תוכןן יאייי",
-                    "forceToWatch": DONT_FORCE, // dont force user to watch
-                },
-                {
-                    "videoTitle": "משחק מחשב",
-                    "src": "w141thRQ-ks",
-                    "info": "מידע על הסרטוןןןןן מלא תוכןן יאייי",
+                    "videoTitle": "cake by the ocean",
+                    "src": "PAzH-YAlFYc",
+                    "info": "מידע על הסרטון",
                     "forceToWatch": DONT_FORCE, // dont force user to watch
                 },
             ],
-            "playlistName2": [
+            "למידה": [
                 {
-                    "videoTitle": "בולונז",
-                    "src": "ysb_gxJ8LE4",
-                    "info": "מידע על הסרטוןןןןן מלא תוכןן יאייי",
+                    "videoTitle": "how to study",
+                    "src": "TjPFZaMe2yw",
+                    "info": "מידע על הסרטון",
                     "forceToWatch": DONT_FORCE, // dont force user to watch
                 },
                 {
-                    "videoTitle": "ראול",
-                    "src": "n0t9iFlGO20",
-                    "info": "מידע על הסרטוןןןןן מלא תוכןן יאייי",
+                    "videoTitle": "How to enter flow state",
+                    "src": "0rIjFCNay2Q",
+                    "info": "מידע על הסרטון",
                     "forceToWatch": DONT_FORCE, // dont force user to watch
                 },
                 {
-                    "videoTitle": "בתיה",
-                    "src": "w141thRQ-ks",
-                    "info": "מידע על הסרטוןןןןן מלא תוכןן יאייי",
+                    "videoTitle": "How to manage your time",
+                    "src": "iDbdXTMnOmE",
+                    "info": "מידע על הסרטון",
+                    "forceToWatch": DONT_FORCE, // dont force user to watch
+                },
+            ],
+            "מתכונים": [
+                {
+                    "videoTitle": "cookie",
+                    "src": "rEdl2Uetpvo",
+                    "info": "מידע על הסרטון",
+                    "forceToWatch": DONT_FORCE, // dont force user to watch
+                },
+                {
+                    "videoTitle": "pie",
+                    "src": "SR4R7GHxU1w",
+                    "info": "מידע על הסרטון",
+                    "forceToWatch": DONT_FORCE, // dont force user to watch
+                },
+                {
+                    "videoTitle": "Croissants",
+                    "src": "djnNkLi_K6E",
+                    "info": "מידע על הסרטון",
                     "forceToWatch": DONT_FORCE, // dont force user to watch
                 },
             ],
